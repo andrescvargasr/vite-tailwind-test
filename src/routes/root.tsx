@@ -1,12 +1,12 @@
-interface RootProps {
-  name?: string;
-}
+// interface RootProps {
+//   name?: string;
+// }
 
-function Root(prop: RootProps) {
+function Root() {
   return (
     <>
-      <div id="sidebar" className="flex items-center gap-2 py-4 border-solid">
-        <h1 className="text-black">Sidebar</h1>
+      <div id="sidebar" className="max-w-md">
+        <h1 className="text-white">Hackuarium</h1>
         <div className="flex flex-col">
           <form id="search-form" role="search" className="relative">
             <input
@@ -21,7 +21,9 @@ function Root(prop: RootProps) {
             <div className="sr-only" aria-live="polite"></div>
           </form>
           <form method="post">
-            <button type="submit">New</button>
+            <button type="submit" className="bg-teal-600">
+              New
+            </button>
           </form>
         </div>
         <nav>
